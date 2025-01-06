@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Icons -->
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Strivezo!</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Get in Touch</h1>
+            <p>Have questions or feedback? Connect with me below!</p>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <form class="contact-form" action="send_mail.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <!-- Social Media Buttons -->
+                <div class="social-media">
+                    <h2>Follow Me</h2>
+                    <p>Connect on social platforms for updates and more!</p>
+                    <div class="social-buttons">
+                        <button onclick="window.open('https://www.facebook.com', '_blank')" class="btn social-btn">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                        <button onclick="window.open(')" class="btn social-btn">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </button>
+                        <button onclick="window.open('https://www.instagram.com', '_blank')" class="btn social-btn">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                        <button onclick="window.open('https://www.linkedin.com', '_blank')" class="btn social-btn">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </button>
+                        <button onclick="window.open('https://www.youtube.com', '_blank')" class="btn social-btn">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Strivezo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
